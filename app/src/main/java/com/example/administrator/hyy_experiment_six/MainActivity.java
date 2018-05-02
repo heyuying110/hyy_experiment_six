@@ -1,6 +1,7 @@
 package com.example.administrator.hyy_experiment_six;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -23,9 +24,9 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                   Intent intent=new Intent(MainActivity.this,Main2Activity.class);
-                   intent.putExtra(Name,editText.getText().toString());
-                   startActivity(intent);
+                Intent intent =new Intent(MainActivity.this,Main2Activity.class);
+                intent.putExtra(Name,editText.getText().toString());
+                startActivity(intent);
             }
         });
     }
